@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 transition-all duration-500 ease-in-out;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title font-bold text-zinc-100;
+  }
+  h1 {
+    @apply text-3xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-5xl max-md:text-4xl;
+  }
+  h3 {
+    @apply text-4xl max-md:text-3xl;
+  }
+  h4 {
+    @apply text-3xl max-md:text-2xl;
+  }
+  h5 {
+    @apply text-2xl max-md:text-xl;
+  }
+  h6 {
+    @apply text-lg max-md:text-base leading-5;
+  }
+  img {
+    @apply select-none;
+  }
+  p,
+  input {
+    @apply font-sans text-zinc-400 leading-8;
+  }
+  ::selection {
+    @apply text-white bg-red-600;
+  }
+
+  /* ----- */
+  .header-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-bl from-zinc-100 to-zinc-600;
+  }
+  .link {
+    @apply text-red-600 font-bold;
+  }
+  .margin {
+    @apply lg:px-8 md:px-6 px-4 xl:mx-auto max-w-7xl mx-4 py-16 max-sm:py-10;
+  }
+  .margin-x {
+    @apply lg:px-8 md:px-6 px-4 xl:mx-auto max-w-7xl mx-4;
+  }
+  .margin-y {
+    @apply py-16 max-sm:py-10;
+  }
+  .transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
