@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function Logo({ white, stacked, size }) {
+interface LogoProps {
+  white: boolean;
+  stacked: boolean;
+  size: string;
+}
+
+export default function Logo({ white, stacked, size }: LogoProps) {
   const src = stacked
     ? white
       ? "/Hackathoon 2 (fafafa).svg" // Stacked & White Logo
