@@ -1,16 +1,10 @@
-import Image from "next/image";
+import Eye_Logo_Stacked from "@/components/Eye logo stacked/Eye Logo Stacked";
 
 export default function Home() {
   return (
     <div className="">
-      <main className="flex items-center justify-center h-screen margin">
-        <Image
-          src="/Hackathoon 1 (fafafa).svg"
-          alt="Hackathoon logo"
-          width={600}
-          height={200}
-          className="object-fit h-36 md:h-60 w-auto"
-        />
+      <main className="h-screen w-screen bg-zinc-950">
+        <Eye_Logo_Stacked white />
       </main>
     </div>
   );

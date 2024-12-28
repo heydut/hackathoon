@@ -1,0 +1,52 @@
+:root {
+  --stacked-eye-size: 85px;
+  --stacked-pupil-size: 40px;
+  --stacked-eye-color: #fafafa;
+  --stacked-pupil-color: #09090b;
+  --dark-stacked-eye-color: #09090b;
+  --dark-stacked-pupil-color: #fafafa;
+}
+
+.stacked-eye,
+.dark-stacked-eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: var(--stacked-eye-size);
+  width: var(--stacked-eye-size);
+  transform-origin: center;
+}
+
+.stacked-eye {
+  background: var(--stacked-eye-color);
+}
+
+.dark-stacked-eye {
+  background: var(--dark-stacked-eye-color);
+}
+
+.stacked-eye:after,
+.dark-stacked-eye:after {
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: var(--stacked-pupil-size);
+  height: var(--stacked-pupil-size);
+  border-radius: 50%;
+  content: " ";
+}
+
+.stacked-eye:after {
+  background: var(--stacked-pupil-color);
+}
+
+.dark-stacked-eye:after {
+  background: var(--dark-stacked-pupil-color);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --stacked-eye-size: 55px;
+    --stacked-pupil-size: 25px;
+  }
+}

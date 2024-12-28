@@ -1,0 +1,52 @@
+:root {
+  --eye-size: 65px;
+  --pupil-size: 30px;
+  --eye-color: #fafafa;
+  --pupil-color: #09090b;
+  --dark-eye-color: #09090b;
+  --dark-pupil-color: #fafafa;
+}
+
+.eye,
+.dark-eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: var(--eye-size);
+  width: var(--eye-size);
+  transform-origin: center;
+}
+
+.eye {
+  background: var(--eye-color);
+}
+
+.dark-eye {
+  background: var(--dark-eye-color);
+}
+
+.eye:after,
+.dark-eye:after {
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: var(--pupil-size);
+  height: var(--pupil-size);
+  border-radius: 50%;
+  content: " ";
+}
+
+.eye:after {
+  background: var(--pupil-color);
+}
+
+.dark-eye:after {
+  background: var(--dark-pupil-color);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --eye-size: 35px;
+    --pupil-size: 17px;
+  }
+}
