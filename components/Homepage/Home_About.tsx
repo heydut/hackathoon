@@ -3,23 +3,27 @@ import Tag from "../UI/Tag";
 
 const stats = [
   {
-    title: "On our waitlist ✨",
-    count: "100+ hackers",
+    title: "On our waitlist",
+    count: "🚀 100+ hackers",
   },
   {
-    title: "For the winners 🏆",
-    count: "10+ prizes",
+    title: "For the winners",
+    count: "🏆 10+ prizes",
   },
   {
-    title: "Choose your challenge 🖥️",
-    count: "1-3 tracks",
+    title: "Choose your challenge",
+    count: "🖥️ 1-3 tracks",
+  },
+  {
+    title: "To create your project",
+    count: "⏰ 48 hours",
   },
 ];
 
 export default function Home_About() {
   return (
     <div className="bg-zinc-50">
-      <div className="margin grid grid-cols-1 md:grid-cols-2 items-end">
+      <div className="margin grid grid-cols-1 md:grid-cols-2 items-start">
         <section className="flex flex-col items-start gap-4">
           <Tag colour="purple" text="Get ready to code" link="/about" />
           <h2 className="text-zinc-900 mb-4 md:mb-8">
@@ -51,10 +55,10 @@ export default function Home_About() {
               of tech.
             </span>
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
+          <div className="grid grid-cols-2 gap-4 w-full">
             {stats.map((stat) => (
               <div key={stat.title} className="flex flex-col items-start">
-                <p className="text-purple-600 text-2xl font-bold tracking-tight">
+                <p className="text-purple-600 text-xl md:text-2xl font-bold tracking-tight">
                   {stat.count}
                 </p>
                 <p className="">{stat.title}</p>

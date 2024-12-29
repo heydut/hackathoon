@@ -14,13 +14,13 @@ import { SparklesCore } from "../Aceternity/sparkles";
 
 export default function Home_Hero() {
   return (
-    <div className="flex flex-col items-center relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center relative overflow-hidden">
       <div className="margin-x relative">
         <div className="absolute z-0 -top-[300px] md:-top-[600px] -right-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-cyan-400 opacity-15" />
         <div className="absolute z-0 -top-[300px] md:-top-[600px] -left-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-purple-600 opacity-15" />
       </div>
 
-      <div className="relative z-10 w-full backdrop-blur-3xl">
+      <div className="relative z-10 w-full backdrop-blur-3xl margin-x ">
         <div className="absolute inset-0 h-full w-full">
           <SparklesCore
             id="tsparticlesfullpage"
@@ -33,7 +33,7 @@ export default function Home_Hero() {
           />
         </div>
         {/* <BackgroundBeamsWithCollision> */}
-        <div className="relative z-10 w-full margin flex flex-col items-center justify-center gap-16 pt-40 md:pt-48 pb-32 md:pb-64">
+        <div className="relative z-10 w-full flex flex-col items-center justify-center gap-16 pt-40 md:pt-48 pb-32 md:pb-64">
           <div className="flex flex-col items-center justify-center md:gap-2 group">
             <h2 className="mb-1.5 md:mb-3 text-zinc-400">We are the</h2>
             <div className="relative">
@@ -57,7 +57,7 @@ export default function Home_Hero() {
           </p>
           <div>
             <div className="flex items-center gap-4 -mt-8">
-              <input className="h-9 w-64 bg-zinc-800/30 border border-zinc-600/50 rounded-md px-4"></input>
+              <input className="h-9 w-full sm:w-64 bg-zinc-800/30 border border-zinc-600/50 rounded-md px-4"></input>
               <Button
                 colour="purple"
                 text="Subscribe"
