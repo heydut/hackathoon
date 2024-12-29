@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-950 transition-all duration-500 ease-in-out;
+    @apply bg-zinc-900 transition-all duration-500 ease-in-out;
   }
   h1,
   h2,
@@ -14,7 +14,7 @@
   h4,
   h5,
   h6 {
-    @apply font-title font-bold text-zinc-100;
+    @apply font-title font-bold tracking-tight text-zinc-100;
   }
   h1 {
     @apply text-3xl sm:text-5xl md:text-6xl;
@@ -42,12 +42,12 @@
     @apply font-sans text-zinc-400 leading-8;
   }
   ::selection {
-    @apply text-white bg-red-600;
+    @apply text-white bg-lime-400;
   }
 
   /* ----- */
   .header-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-bl from-zinc-100 to-zinc-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-violet-600 to-purple-600;
   }
   .link {
     @apply text-red-600 font-bold;

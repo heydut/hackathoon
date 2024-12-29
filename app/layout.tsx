@@ -1,6 +1,8 @@
 import PrelineScript from "@/components/PrelineScript";
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hackathoon",
@@ -15,9 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <PrelineScript />
       <body>
-        <PrelineScript />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
