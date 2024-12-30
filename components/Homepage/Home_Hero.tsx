@@ -19,19 +19,18 @@ export default function Home_Hero() {
         <div className="absolute z-0 -top-[300px] md:-top-[600px] -right-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-cyan-400 opacity-15" />
         <div className="absolute z-0 -top-[300px] md:-top-[600px] -left-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-purple-600 opacity-15" />
       </div>
-
+      <div className="absolute inset-0 h-full w-full">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="rgba(255, 255, 255)"
+        />
+      </div>
       <div className="relative z-10 w-full backdrop-blur-3xl margin-x ">
-        <div className="absolute inset-0 h-full w-full">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="rgba(255, 255, 255)"
-          />
-        </div>
         {/* <BackgroundBeamsWithCollision> */}
         <div className="relative z-10 w-full flex flex-col items-center justify-center gap-16 pt-40 md:pt-48 pb-32 md:pb-64">
           <div className="flex flex-col items-center justify-center md:gap-2 group">
