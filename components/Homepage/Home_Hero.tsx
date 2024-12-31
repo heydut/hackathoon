@@ -15,11 +15,14 @@ import { SparklesCore } from "../Aceternity/sparkles";
 export default function Home_Hero() {
   return (
     <div className="flex flex-col items-center justify-center relative overflow-hidden">
-      <div className="margin-x relative">
-        <div className="absolute z-0 -top-[300px] md:-top-[600px] -right-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-cyan-400 opacity-15" />
-        <div className="absolute z-0 -top-[300px] md:-top-[600px] -left-[10%] aspect-square w-[500px] md:w-[1000px] rounded-full blur-3xl bg-purple-600 opacity-15" />
+      <div className="backdrop-blur-3xl">
+        <div className="margin-x relative">
+          <div className="absolute z-0 -top-[300px] md:-top-[450px] -right-[10%] aspect-square w-[500px] md:w-[750px] rounded-full blur-[100px] bg-cyan-400 opacity-5" />
+          <div className="absolute z-0 -top-[300px] md:-top-[450px] -left-[10%] aspect-square w-[500px] md:w-[750px] rounded-full blur-[100px] bg-purple-600 opacity-5" />
+        </div>
       </div>
-      <div className="absolute inset-0 h-full w-full">
+
+      <div className="absolute z-30 inset-0 h-full w-full">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -30,7 +33,7 @@ export default function Home_Hero() {
           particleColor="rgba(255, 255, 255)"
         />
       </div>
-      <div className="relative z-10 w-full backdrop-blur-3xl margin-x ">
+      <div className="relative z-40 w-full margin-x ">
         {/* <BackgroundBeamsWithCollision> */}
         <div className="relative z-10 w-full flex flex-col items-center justify-center gap-16 pt-40 md:pt-48 pb-32 md:pb-64">
           <div className="flex flex-col items-center justify-center md:gap-2 group">
@@ -77,7 +80,7 @@ export default function Home_Hero() {
         {/* </BackgroundBeamsWithCollision> */}
       </div>
 
-      <div className="absolute z-20 bottom-0 right-0 left-0 mx-auto">
+      <div className="absolute z-50 bottom-0 right-0 left-0 mx-auto">
         <Image
           src="/Space images/Hero Shape.svg"
           alt="Hero Shape"
