@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <PrelineScript />
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
